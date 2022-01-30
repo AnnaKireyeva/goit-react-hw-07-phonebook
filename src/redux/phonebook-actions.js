@@ -1,42 +1,30 @@
-// import shortid from 'shortid';
 import { createAction } from '@reduxjs/toolkit';
 
-const fetchContactsRequest = createAction('contacts/fetchContactRequest');
-const fetchContactsSuccess = createAction('contacts/fetchContactSuccess');
-const fetchContactsError = createAction('contacts/fetchContactError');
+// const fetchContactsRequest = createAction('contacts/fetchContactRequest');
+// const fetchContactsSuccess = createAction('contacts/fetchContactSuccess');
+// const fetchContactsError = createAction('contacts/fetchContactError');
 
-const addContactRequest = createAction('contacts/addContactRequest');
-const addContactSuccess = createAction('contacts/addContactSuccess');
-const addContactError = createAction('contacts/addContactError');
+// const addContactRequest = createAction('contacts/addContactRequest');
+// const addContactSuccess = createAction('contacts/addContactSuccess');
+// const addContactError = createAction('contacts/addContactError');
 
-const deleteContactRequest = createAction('contacts/deleteContactRequest');
-const deleteContactSuccess = createAction('contacts/deleteContactSuccess');
-const deleteContactError = createAction('contacts/deleteContactError');
+// const deleteContactRequest = createAction('contacts/deleteContactRequest');
+// const deleteContactSuccess = createAction('contacts/deleteContactSuccess');
+// const deleteContactError = createAction('contacts/deleteContactError');
 
-const changeFilter = createAction('contacts/changeFilter');
-// const addContact = createAction('contacts/add', newContact => {
-//   return {
-//     payload: {
-//       id: shortid.generate(),
-//       name: newContact.name,
-//       number: newContact.number,
-//     },
-//   };
-// });
+export const changeFilter = createAction('contacts/changeFilter');
 
-// const deleteContact = createAction('contacts/delete');
+// const phonebookActions = {
+//   fetchContactsRequest,
+//   fetchContactsSuccess,
+//   fetchContactsError,
+//   addContactRequest,
+//   addContactSuccess,
+//   addContactError,
+//   deleteContactRequest,
+//   deleteContactSuccess,
+//   deleteContactError,
+//   changeFilter,
+// };
 
-const phonebookActions = {
-  fetchContactsRequest,
-  fetchContactsSuccess,
-  fetchContactsError,
-  addContactRequest,
-  addContactSuccess,
-  addContactError,
-  deleteContactRequest,
-  deleteContactSuccess,
-  deleteContactError,
-  changeFilter,
-};
-
-export default phonebookActions;
+// export default phonebookActions;

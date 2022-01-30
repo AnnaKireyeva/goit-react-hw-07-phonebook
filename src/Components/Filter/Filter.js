@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Filter.module.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { getFilter } from '../../redux/phonebook-selectors';
-import phonebookActions from '../../redux/phonebook-actions';
+import { changeFilter } from '../../redux/phonebook-actions';
 
 const Filter = () => {
   const value = useSelector(getFilter);
@@ -15,9 +15,7 @@ const Filter = () => {
         <input
           type="text"
           value={value}
-          onChange={e =>
-            dispatch(phonebookActions.changeFilter(e.currentTarget.value))
-          }
+          onChange={e => dispatch(changeFilter(e.currentTarget.value))}
           className={styles.filterInput}
         ></input>
       </label>
