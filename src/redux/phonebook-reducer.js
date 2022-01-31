@@ -3,19 +3,6 @@ import { combineReducers } from 'redux';
 import { changeFilter } from './phonebook-actions';
 import phonebookOperations from './phonebook-operations';
 
-// const {
-//   fetchContactsRequest,
-//   fetchContactsSuccess,
-//   fetchContactsError,
-//   addContactRequest,
-//   addContactSuccess,
-//   addContactError,
-//   deleteContactRequest,
-//   deleteContactSuccess,
-//   deleteContactError,
-//   changeFilter,
-// } = phonebookActions;
-// const { changeFilter } = phonebookActions;
 const { fetchContacts, addContact, deleteContact } = phonebookOperations;
 
 const items = createReducer([], {

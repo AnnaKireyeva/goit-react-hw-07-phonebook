@@ -6,7 +6,6 @@ export const Loader = () => {
     <div className={styles.spinner}>
       <LoaderSpinner
         type="Audio"
-        // color="#ffa600ea"
         color="#00BFFF"
         height={60}
         width={60}
